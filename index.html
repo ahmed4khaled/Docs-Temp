@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charSet="utf-8" />
+    <title>Hotel Management System Documentation</title>
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hotel Management System Documentation" />
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <style>
+        :root {
+            --tally-primary-hue: 212deg;
+            --tally-navbar-height: 4rem;
+            --tally-menu-height: 3.75rem;
+            --tally-banner-height: 2.5rem;
+        }
+
+        .dark {
+            --tally-primary-hue: 204deg;
+        }
+    </style>
+    <meta name="msapplication-TileColor" content="#fff"/>
+    <meta http-equiv="Content-Language" content="en"/>
+    <meta name="description" content="Professional documentation for a Laravel-based Hotel Management System." />
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@shuding_" />
+    <meta property="og:title" content="Hotel Management System Documentation"/>
+    <meta property="og:description" content="Professional documentation for a Laravel-based Hotel Management System." />
+    <meta name="apple-mobile-web-app-title" content="Hotel Management System"/>
+    <meta name="next-head-count" content="15" />
+    <link rel="preload" href="./css/first.css" as="style" />
+    <link rel="stylesheet" href="./css/second.css" data-n-p="" /><noscript data-n-css=""></noscript>
+</head>
+
+<body>
+    <div id="__next">
+        <script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && true)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } if (e === 'light' || e === 'dark') d.style.colorScheme = e } catch (e) { } }()</script>
+        <div dir="ltr">
+            <script>document.documentElement.setAttribute('dir', 'ltr')</script>
+            <div class="tally-nav-container nx-sticky nx-top-0 nx-z-20 nx-w-full nx-bg-transparent">
+                <div
+                    class="tally-nav-container-blur nx-pointer-events-none nx-absolute nx-z-[-1] nx-h-full nx-w-full nx-bg-white dark:nx-bg-dark nx-shadow-[0_2px_4px_rgba(0,0,0,.02),0_-1px_0_rgba(0,0,0,.06)_inset] dark:nx-shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] contrast-more:nx-shadow-[0_0_0_1px_#000] contrast-more:dark:nx-shadow-[0_0_0_1px_#fff]">
+                </div>
+                <nav
+                    class="nx-mx-auto nx-flex nx-h-[var(--tally-navbar-height)] nx-max-w-[90rem] nx-items-center nx-justify-end nx-gap-2 nx-pl-[max(env(safe-area-inset-left),1.5rem)] nx-pr-[max(env(safe-area-inset-right),1.5rem)]">
+                    <a class="nx-flex nx-items-center hover:nx-opacity-75 ltr:nx-mr-auto rtl:nx-ml-auto" href="/"><img
+                            src="./img/favicon-96x96.png" /><span
+                            style="margin-left:.4em;font-weight:800">Hotel Management System</span></a>
+                    <div class="tally-search nx-relative md:nx-w-64 nx-hidden md:nx-inline-block mx-min-w-[200px]">
+                        <div
+                            class="nx-relative nx-flex nx-items-center nx-text-gray-900 contrast-more:nx-text-gray-800 dark:nx-text-gray-300 contrast-more:dark:nx-text-gray-300">
+                            <input spellcheck="false"
+                                class="nx-block nx-w-full nx-appearance-none nx-rounded-lg nx-px-3 nx-py-2 nx-transition-colors nx-text-base nx-leading-tight md:nx-text-sm nx-bg-black/[.03] dark:nx-bg-gray-50/10 focus:nx-bg-white dark:focus:nx-bg-dark placeholder:nx-text-gray-400 dark:placeholder:nx-text-gray-500 contrast-more:nx-border contrast-more:nx-border-current"
+                                type="search" placeholder="Search documentation..." value="" />
+                        </div>
+                    </div>
+
+                    <button type="button" aria-label="Menu"
+                        class="tally-hamburger -nx-mr-2 nx-rounded nx-p-2 active:nx-bg-gray-400/20 md:nx-hidden"><svg
+                            fill="none" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" class="">
+                            <g>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16">
+                                </path>
+                            </g>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16"></path>
+                            <g>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+            <div class="nx-mx-auto nx-flex nx-max-w-[90rem]">
+                <div class="[transition:background-color_1.5s_ease] motion-reduce:nx-transition-none nx-bg-transparent">
+                </div>
+                <aside
+                    class="tally-sidebar-container nx-flex nx-flex-col md:nx-top-16 md:nx-w-64 md:nx-shrink-0 md:nx-transform-none md:nx-sticky md:nx-self-start [transform:translate3d(0,-100%,0)]">
+                    <div
+                        class="nx-z-[1] nx-p-4 md:nx-hidden nx-shadow-[0_2px_14px_6px_#fff] dark:nx-shadow-[0_2px_14px_6px_#111] contrast-more:nx-shadow-none dark:contrast-more:nx-shadow-none">
+                        <div class="tally-search nx-relative md:nx-w-64">
+                            <div
+                                class="nx-relative nx-flex nx-items-center nx-text-gray-900 contrast-more:nx-text-gray-800 dark:nx-text-gray-300 contrast-more:dark:nx-text-gray-300">
+                                <input spellcheck="false"
+                                    class="nx-block nx-w-full nx-appearance-none nx-rounded-lg nx-px-3 nx-py-2 nx-transition-colors nx-text-base nx-leading-tight md:nx-text-sm nx-bg-black/[.03] dark:nx-bg-gray-50/10 focus:nx-bg-white dark:focus:nx-bg-dark placeholder:nx-text-gray-400 dark:placeholder:nx-text-gray-500 contrast-more:nx-border contrast-more:nx-border-current"
+                                    type="search" placeholder="Search documentation..." value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="tally-scrollbar nx-overflow-y-auto nx-px-4 nx-pb-4 md:nx-pt-4 nx-grow md:nx-h-[calc(100vh-var(--tally-navbar-height)-3.75rem)]">
+                        <ul class="nx-flex nx-flex-col nx-gap-1 nx-hidden md:nx-flex">
+                            <li class="nx-flex nx-flex-col nx-gap-1 active"><a
+                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-bg-primary-50 nx-font-bold nx-text-primary-500 dark:nx-bg-primary-500/10 contrast-more:nx-border-primary-500 contrast-more:dark:nx-border-primary-500"
+                                    href="index.html">Project Overview</a></li>
+                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                    href="info.html">Technologies Used</a></li>
+                            <li class="open"><a
+                                    class="nx-items-center nx-justify-between nx-gap-2 nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50">Getting Started<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="nx-h-[18px] nx-min-w-[18px] nx-rounded-sm nx-p-0.5 hover:nx-bg-gray-800/5 dark:hover:nx-bg-gray-100/5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"
+                                            class="nx-origin-center nx-transition-transform rtl:-nx-rotate-180 ltr:nx-rotate-90 rtl:nx-rotate-[-270deg]">
+                                        </path>
+                                    </svg></a>
+                                <div
+                                    class="nx-transform-gpu nx-overflow-hidden nx-transition-all nx-duration-300 nx-ease-in-out motion-reduce:nx-transition-none">
+                                    <div class="nx-transform-gpu nx-overflow-hidden nx-p-2 nx-transition-opacity nx-duration-500 nx-ease-in-out motion-reduce:nx-transition-none ltr:nx-pr-0 rtl:nx-pl-0"
+                                        style="opacity:1">
+                                        <ul
+                                            class="nx-flex nx-flex-col nx-gap-1 nx-relative before:nx-absolute before:nx-inset-y-1.5 before:nx-w-px before:nx-bg-gray-200 before:nx-content-[&quot;&quot;] dark:before:nx-bg-neutral-800 ltr:nx-pl-3 ltr:before:nx-left-0 rtl:nx-pr-3 rtl:before:nx-right-0 ltr:nx-ml-1 rtl:nx-mr-1">
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/install">Server Requirements</a></li>
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/install/local">Installation Guide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="open"><a
+                                    class="nx-items-center nx-justify-between nx-gap-2 nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50">System Modules<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="nx-h-[18px] nx-min-w-[18px] nx-rounded-sm nx-p-0.5 hover:nx-bg-gray-800/5 dark:hover:nx-bg-gray-100/5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"
+                                            class="nx-origin-center nx-transition-transform rtl:-nx-rotate-180 ltr:nx-rotate-90 rtl:nx-rotate-[-270deg]">
+                                        </path>
+                                    </svg></a>
+                                <div
+                                    class="nx-transform-gpu nx-overflow-hidden nx-transition-all nx-duration-300 nx-ease-in-out motion-reduce:nx-transition-none">
+                                    <div class="nx-transform-gpu nx-overflow-hidden nx-p-2 nx-transition-opacity nx-duration-500 nx-ease-in-out motion-reduce:nx-transition-none ltr:nx-pr-0 rtl:nx-pl-0"
+                                        style="opacity:1">
+                                        <ul
+                                            class="nx-flex nx-flex-col nx-gap-1 nx-relative before:nx-absolute before:nx-inset-y-1.5 before:nx-w-px before:nx-bg-gray-200 before:nx-content-[&quot;&quot;] dark:before:nx-bg-neutral-800 ltr:nx-pl-3 ltr:before:nx-left-0 rtl:nx-pr-3 rtl:before:nx-right-0 ltr:nx-ml-1 rtl:nx-mr-1">
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/dashboard">Authentication & Dashboard</a></li>
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/user-roles">Users & Roles</a></li>
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/settings">Settings & Languages</a></li>
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/room-master">Room Data</a></li>
+                                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                                    href="/customers">Customers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nx-flex nx-flex-col nx-gap-1"><a
+                                    class="nx-flex nx-rounded nx-px-2 nx-py-1.5 nx-text-sm nx-transition-colors [word-break:break-word] nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:nx-text-neutral-500 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50 contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50 contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50"
+                                    href="admin.html">Screens / Pages</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="nx-relative nx-z-[1] nx-mx-4 nx-border-t nx-py-4 nx-shadow-[0_-12px_16px_#fff] nx-flex nx-items-center nx-gap-2 dark:nx-border-neutral-800 dark:nx-shadow-[0_-12px_16px_#111] contrast-more:nx-border-neutral-400 contrast-more:nx-shadow-none contrast-more:dark:nx-shadow-none">
+                        <div class="nx-relative"><button title="Change theme"
+                                class="nx-h-7 nx-rounded-md nx-px-2 nx-text-left nx-text-xs nx-font-medium nx-text-gray-600 nx-transition-colors dark:nx-text-gray-400 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50"
+                                id="headlessui-listbox-button-:Rlsr6:" type="button" aria-haspopup="true"
+                                aria-expanded="false" data-headlessui-state="">
+                                <div class="nx-flex nx-items-center nx-gap-2 nx-capitalize"><svg fill="none"
+                                        viewBox="3 3 18 18" width="12" height="12" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            fill="currentColor"
+                                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                        </path>
+                                    </svg><span class="">light</span></div>
+                            </button></div>
+                    </div>
+                </aside>
+                <div class="tally-toc nx-order-last nx-hidden nx-w-64 nx-shrink-0 xl:nx-block nx-px-4">
+                    <div
+                        class="tally-scrollbar nx-sticky nx-top-16 nx-overflow-y-auto nx-pr-4 nx-pt-8 nx-text-sm [hyphens:auto] nx-max-h-[calc(100vh-var(--tally-navbar-height)-env(safe-area-inset-bottom))] ltr:-nx-mr-4 rtl:-nx-ml-4">
+                        <div
+                            class="nx-sticky nx-bottom-0 nx-flex nx-flex-col nx-items-start nx-gap-2 nx-pb-8 dark:nx-border-neutral-800 contrast-more:nx-border-t contrast-more:nx-border-neutral-400 contrast-more:nx-shadow-none contrast-more:dark:nx-border-neutral-400">
+                            <a class="nx-text-xs nx-font-medium nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
+                                href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="reach-skip-nav" data-reach-skip-nav-content=""></div>
+                <article
+                    class="nx-flex nx-min-h-[calc(100vh-4rem)] nx-w-full nx-min-w-0 nx-max-w-full nx-justify-center nx-pb-8 nx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+                    <main class="nx-w-full nx-min-w-0 nx-max-w-4xl nx-px-6 nx-pt-4 md:nx-px-8">
+                        <ul
+                            class="tally-breadcrumb nx-mt-2.5 nx-flex nx-items-center nx-gap-1 nx-overflow-hidden nx-text-sm nx-text-gray-500 contrast-more:nx-text-current">
+                            <li class="nx-whitespace-nowrap nx-transition-colors nx-font-medium nx-text-gray-700 contrast-more:nx-font-bold contrast-more:nx-text-current dark:nx-text-gray-400 contrast-more:dark:nx-text-current"
+                                title="Project Overview">Project Overview</li>
+                        </ul>
+                        <div>
+                            <h1
+                                class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-border-b nx-pb-1 nx-text-4xl contrast-more:nx-border-neutral-400 dark:nx-border-primary-100/10 contrast-more:dark:nx-border-neutral-400">
+                                Hotel Management System<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h1>
+
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                Hotel Management System is a Laravel 12 based administration platform designed to manage
+                                core hotel operations from a centralized internal dashboard. The current version is best
+                                described as a solid foundation system that already includes essential modules for users,
+                                settings, room data, and customer information, while leaving space for future hotel PMS
+                                expansion.
+                            </p>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Features<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Secure authentication with login using username or email.</li>
+                                <li class="nx-my-2">User and role management with CRUD operations and dynamic permissions.</li>
+                                <li class="nx-my-2">General hotel settings for application name, currency, timezone, and operating preferences.</li>
+                                <li class="nx-my-2">Multi-language support with RTL and LTR layouts.</li>
+                                <li class="nx-my-2">Room master data management for bed types, booking types, room types, facilities, and room sizes.</li>
+                                <li class="nx-my-2">Room management for buildings and floors.</li>
+                                <li class="nx-my-2">Customer management for storing essential guest records.</li>
+                                <li class="nx-my-2">Clean Laravel structure ready for extension into bookings, room status, and payment tracking.</li>
+                            </ul>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">System Modules<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Authentication</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                The system includes a custom login screen for internal staff. Users can authenticate
+                                using either username or email, and protected modules are secured through Laravel auth
+                                middleware.
+                            </p>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Dashboard</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                The dashboard acts as the central entry point to the admin panel. In the current version
+                                it is intentionally simple, making it suitable for future expansion with reports, KPIs,
+                                quick actions, and hotel activity summaries.
+                            </p>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">User &amp; Role Management</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                Administrators can create, update, delete, and search users and roles. Each role can
+                                store permissions in a dynamic JSON structure, allowing flexible access control across
+                                different modules.
+                            </p>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Role CRUD with search and pagination.</li>
+                                <li class="nx-my-2">User CRUD with active and inactive status.</li>
+                                <li class="nx-my-2">Permission levels such as View, Create, Edit, Delete, and Full.</li>
+                                <li class="nx-my-2">Role permissions can be copied directly to users during create or update actions.</li>
+                            </ul>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">General Settings</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                This module controls the main configuration of the hotel environment, including business
+                                identity and operational defaults.
+                            </p>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Application name and hotel title.</li>
+                                <li class="nx-my-2">Fiscal starting month and initial business date.</li>
+                                <li class="nx-my-2">Currency, symbol position, decimal settings, and timezone.</li>
+                                <li class="nx-my-2">Logo dimensions and core business preferences.</li>
+                            </ul>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Language Management</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                The platform supports multilingual administration through a dedicated language management
+                                module. Languages can be enabled, disabled, set as default, and edited from the admin panel.
+                            </p>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Multi-language support with translation key management.</li>
+                                <li class="nx-my-2">RTL and LTR interface direction support.</li>
+                                <li class="nx-my-2">Flexible translation file handling for system messages.</li>
+                            </ul>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Room Master Data</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                This module stores reusable room-related definitions used across the hotel setup.
+                            </p>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Bed types</li>
+                                <li class="nx-my-2">Booking types</li>
+                                <li class="nx-my-2">Room types</li>
+                                <li class="nx-my-2">Facilities with optional image support</li>
+                                <li class="nx-my-2">Room sizes</li>
+                            </ul>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Room Management</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                Room management currently focuses on organizing the property structure itself.
+                            </p>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Buildings management</li>
+                                <li class="nx-my-2">Floors management</li>
+                                <li class="nx-my-2">Search by name or code with validation rules for data consistency</li>
+                            </ul>
+
+                            <h3 class="nx-font-semibold nx-tracking-tight nx-mt-8 nx-text-2xl">Customer Management</h3>
+                            <p class="nx-mt-6 nx-leading-7 first:nx-mt-0">
+                                The customer module stores core guest information and supports basic CRUD operations for
+                                front office or admin-level customer records.
+                            </p>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Installation Guide<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ol class="nx-mt-6 nx-list-decimal first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Clone the project into your local environment.</li>
+                                <li class="nx-my-2">Run <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">composer install</code>.</li>
+                                <li class="nx-my-2">Run <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">npm install</code>.</li>
+                                <li class="nx-my-2">Copy <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">.env.example</code> to <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">.env</code>.</li>
+                                <li class="nx-my-2">Generate the application key using <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">php artisan key:generate</code>.</li>
+                                <li class="nx-my-2">Configure database credentials in the <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">.env</code> file.</li>
+                                <li class="nx-my-2">Either run <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">php artisan migrate</code> or import the provided <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">hotel.sql</code> file.</li>
+                                <li class="nx-my-2">Start the application using <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">php artisan serve</code>.</li>
+                                <li class="nx-my-2">Start frontend assets using <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">npm run dev</code> or use <code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">composer run dev</code>.</li>
+                            </ol>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Folder Structure<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">app/Http/Controllers</code> contains controller logic for all modules.</li>
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">app/Models</code> contains Eloquent models for hotel entities.</li>
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">routes/*.php</code> organizes routes by module.</li>
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">resources/views</code> contains Blade templates and interface files.</li>
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">database/migrations</code> contains database migration files.</li>
+                                <li class="nx-my-2"><code class="nx-border-black/5 nx-bg-black/5 nx-break-words nx-rounded-md nx-border nx-py-0.5 nx-px-[.25em] nx-text-[.9em] dark:nx-border-white/10 dark:nx-bg-white/10" dir="ltr">hotel.sql</code> can be used for direct database import if preferred.</li>
+                            </ul>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Screens / Pages Description<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2"><strong>Login Page:</strong> Internal authentication page for admins and staff. Screenshot placement suggestion: show the login form and branding here.</li>
+                                <li class="nx-my-2"><strong>Dashboard:</strong> Central entry page for administrative actions. Screenshot placement suggestion: summary cards or quick links.</li>
+                                <li class="nx-my-2"><strong>Users &amp; Roles:</strong> Screens for managing system users, roles, and permissions.</li>
+                                <li class="nx-my-2"><strong>General Settings:</strong> Forms for system-wide configuration such as currency and timezone.</li>
+                                <li class="nx-my-2"><strong>Language Management:</strong> Interfaces for adding languages, editing translations, and selecting text direction.</li>
+                                <li class="nx-my-2"><strong>Room Master Data:</strong> CRUD screens for bed types, booking types, room types, facilities, and sizes.</li>
+                                <li class="nx-my-2"><strong>Room Management:</strong> Pages for buildings and floors setup.</li>
+                                <li class="nx-my-2"><strong>Customer Management:</strong> Listing and form pages for maintaining guest profiles.</li>
+                            </ul>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Future Improvements<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Booking system for room reservations.</li>
+                                <li class="nx-my-2">Room status tracking such as available, occupied, and maintenance.</li>
+                                <li class="nx-my-2">Simple payment tracking and billing support.</li>
+                                <li class="nx-my-2">Operational reporting for occupancy and revenue.</li>
+                                <li class="nx-my-2">Enhanced dashboard widgets and hotel KPIs.</li>
+                            </ul>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Technologies Used<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">PHP 8.2+</li>
+                                <li class="nx-my-2">Laravel 12</li>
+                                <li class="nx-my-2">Blade Templates</li>
+                                <li class="nx-my-2">MySQL / MariaDB</li>
+                                <li class="nx-my-2">Vite</li>
+                                <li class="nx-my-2">Tailwind CSS 4</li>
+                                <li class="nx-my-2">JavaScript / jQuery</li>
+                                <li class="nx-my-2">Bootstrap-based admin interface</li>
+                            </ul>
+
+                            <h2 class="nx-font-semibold nx-tracking-tight nx-mt-10 nx-text-3xl">Presentation Tips<span
+                                    class="nx-absolute -nx-mt-20"></span><a href="#undefined"
+                                    class="subheading-anchor"></a></h2>
+                            <ul class="nx-mt-6 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+                                <li class="nx-my-2">Use one screenshot for each major module to make the documentation feel more complete and client-ready.</li>
+                                <li class="nx-my-2">Prefer clean screenshots with real sample hotel data instead of empty tables.</li>
+                                <li class="nx-my-2">Highlight the login page, dashboard, user permissions, and room master pages as the main value points.</li>
+                                <li class="nx-my-2">Keep section titles short and clear so both technical and non-technical readers can scan the page easily.</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="nx-mt-12 nx-mb-8 nx-block nx-text-xs nx-text-gray-500 ltr:nx-text-right rtl:nx-text-left dark:nx-text-gray-400">
+                            Last updated on<!-- --> <!-- -->April 28, 2026</div>
+                        <div
+                            class="nx-mb-8 nx-flex nx-items-center nx-border-t nx-pt-8 dark:nx-border-neutral-800 contrast-more:nx-border-neutral-400 dark:contrast-more:nx-border-neutral-400">
+                            <a title="Screens / Pages"
+                                class="nx-flex nx-max-w-[50%] nx-items-center nx-gap-1 nx-py-4 nx-text-base nx-font-medium nx-text-gray-600 nx-transition-colors [word-break:break-word] hover:nx-text-primary-500 dark:nx-text-gray-300 md:nx-text-lg ltr:nx-ml-auto ltr:nx-pl-4 ltr:nx-text-right rtl:nx-mr-auto rtl:nx-pr-4 rtl:nx-text-left"
+                                href="admin.html">Screens / Pages<svg fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="nx-inline nx-h-5 nx-shrink-0 rtl:nx-rotate-180">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg></a>
+                        </div>
+                    </main>
+                </article>
+            </div>
+            <footer class="nx-bg-gray-100 nx-pb-[env(safe-area-inset-bottom)] dark:nx-bg-neutral-900">
+                <div class="nx-mx-auto nx-flex nx-max-w-[90rem] nx-gap-2 nx-py-2 nx-px-4 nx-hidden">
+                    <div class="nx-relative"><button title="Change theme"
+                            class="nx-h-7 nx-rounded-md nx-px-2 nx-text-left nx-text-xs nx-font-medium nx-text-gray-600 nx-transition-colors dark:nx-text-gray-400 hover:nx-bg-gray-100 hover:nx-text-gray-900 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50"
+                            id="headlessui-listbox-button-:Rkt6:" type="button" aria-haspopup="true"
+                            aria-expanded="false" data-headlessui-state="">
+                            <div class="nx-flex nx-items-center nx-gap-2 nx-capitalize"><svg fill="none"
+                                    viewBox="3 3 18 18" width="12" height="12" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        fill="currentColor"
+                                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg><span class="">light</span></div>
+                        </button></div>
+                </div>
+                <hr class="dark:nx-border-neutral-800" />
+                <div
+                    class="nx-mx-auto nx-flex nx-max-w-[90rem] nx-justify-center nx-py-12 nx-text-gray-600 dark:nx-text-gray-400 md:nx-justify-start nx-pl-[max(env(safe-area-inset-left),1.5rem)] nx-pr-[max(env(safe-area-inset-right),1.5rem)]">
+                    <span>Copyright <!-- -->2025<!-- --> ©<!-- --> <a href="#"
+                            target="_blank">Hotel Management System</a>. All Rights Reserved.</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
